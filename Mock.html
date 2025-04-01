@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .browser-header {
+            background-color: #e9e9e9;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .browser-controls {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .browser-button {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .url-bar {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+        
+        .menu-button {
+            margin-left: 10px;
+        }
+        
+        .content-area {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .image-placeholder {
+            border: 1px solid #999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 150px;
+        }
+        
+        .image-placeholder::before {
+            content: "X";
+            font-size: 50px;
+            color: #999;
+        }
+        
+        .content-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="browser-header">
+            <div class="text-center mb-2">A Web Page</div>
+            <div class="browser-controls">
+                <div class="browser-button">←</div>
+                <div class="browser-button">→</div>
+                <div class="browser-button">⟳</div>
+                <div class="url-bar">
+                    <span>🔍 http://</span>
+                </div>
+                <div class="menu-button">≡</div>
+            </div>
+        </div>
+        
+        <div class="content-area">
+            <div class="container">
+                <div class="content-box">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Thundercats post-ironic tote bag kale chips small batch forage. Humblebrag shabby chic distillery, craft beer forage slow-carb chambray gastropub seitan YOLO Beard lomo health goth irony, heirloom austin kitsch selvage schlitz meggings listicle marfa tote bag venmo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-box">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <p>Pinterest shoreditch crucifix, mixtape schlitz normcore locavore. Put a bird on it drinking vinegar four loko, vegan post-ironic dreamcatcher synth organic. Put a bird on it vice raw denim, ennui slow-carb stumptown XOXO taxidermy offal semiotics selvage next level</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-box">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Chia tilde keffiyeh vinyl master cleanse cray, deep v pinterest crucifix next level. Four loko gluten-free thundercats, cronut flexitarian taxidermy green juice mustache. Mixtape celiac godard hammock, neutra cliche microdosing. Shabby chic selvage fixie single-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .browser-header {
+            background-color: #e9e9e9;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .browser-controls {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .browser-button {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .url-bar {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+        
+        .menu-button {
+            margin-left: 10px;
+        }
+        
+        .content-area {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: white;
+        }
+        
+        .image-placeholder {
+            border: 1px solid #999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 150px;
+            margin-bottom: 10px;
+        }
+        
+        .image-placeholder::before {
+            content: "X";
+            font-size: 50px;
+            color: #999;
+        }
+        
+        .image-caption {
+            text-align: center;
+        }
+        
+        .content-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="browser-header">
+            <div class="text-center mb-2">A Web Page</div>
+            <div class="browser-controls">
+                <div class="browser-button">←</div>
+                <div class="browser-button">→</div>
+                <div class="browser-button">⟳</div>
+                <div class="url-bar">
+                    <span>🔍 http://</span>
+                </div>
+                <div class="menu-button">≡</div>
+            </div>
+        </div>
+        
+        <div class="content-area">
+            <div class="container">
+                <h1 class="text-center mb-4">Advanced Widget Inc.</h1>
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="image-placeholder"></div>
+                        <p class="image-caption">Image description goes here</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="image-placeholder"></div>
+                        <p class="image-caption">Another cool image</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="image-placeholder"></div>
+                        <p class="image-caption">Widget manufacturing</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="image-placeholder"></div>
+                        <p class="image-caption">My dog</p>
+                    </div>
+                </div>
+                
+                <div class="content-box">
+                    <p>Wolf intelligentsia heirloom DIY farm-to-table, truffaut flexitarian XOXO scenester ramps meh literally bushwick. Forage synth church-key farm-to-table. Readymade plaid scenester synth gastropub williamsburg. Shoreditch irony franzen quinoa, vegan pug wayfarers letterpress pour-over heirloom blog artisan stumptown master cleanse church-key. Hella selvage freegan, four loko chambray humblebrag typewriter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .browser-header {
+            background-color: #e9e9e9;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .browser-controls {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .browser-button {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .url-bar {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+        
+        .menu-button {
+            margin-left: 10px;
+        }
+        
+        .content-area {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: white;
+        }
+        
+        .sidebar-link {
+            display: block;
+            padding: 8px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            color: #0d6efd;
+            text-decoration: none;
+        }
+        
+        .image-placeholder {
+            border: 1px solid #999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 150px;
+            margin-bottom: 15px;
+        }
+        
+        .image-placeholder::before {
+            content: "X";
+            font-size: 50px;
+            color: #999;
+        }
+        
+        .content-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="browser-header">
+            <div class="text-center mb-2">A Web Page</div>
+            <div class="browser-controls">
+                <div class="browser-button">←</div>
+                <div class="browser-button">→</div>
+                <div class="browser-button">⟳</div>
+                <div class="url-bar">
+                    <span>🔍 http://</span>
+                </div>
+                <div class="menu-button">≡</div>
+            </div>
+        </div>
+        
+        <div class="content-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#" class="sidebar-link">a link</a>
+                        <a href="#" class="sidebar-link">a link</a>
+                        <a href="#" class="sidebar-link">a link</a>
+                        <a href="#" class="sidebar-link">a link</a>
+                        <a href="#" class="sidebar-link">a link</a>
+                        <a href="#" class="sidebar-link">a link</a>
+                        <a href="#" class="sidebar-link">a link</a>
+                        <a href="#" class="sidebar-link">a link</a>
+                        <a href="#" class="sidebar-link">a link</a>
+                        <a href="#" class="sidebar-link">a link</a>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="content-section row">
+                            <div class="col-md-9">
+                                <p>Keffiyeh narwhal disrupt dreamcatcher, intelligentsia mumblecore fixie offal health goth XOXO four loko fap try-hard messenger bag kickstarter. Viral aesthetic sustainable, gluten-free 3 wolf moon craft beer jean shorts taxidermy.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="image-placeholder"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-section row">
+                            <div class="col-md-9">
+                                <p>Keffiyeh narwhal disrupt dreamcatcher, intelligentsia mumblecore fixie offal health goth XOXO four loko fap try-hard messenger bag kickstarter. Viral aesthetic sustainable, gluten-free 3 wolf moon craft beer jean shorts taxidermy.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="image-placeholder"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
