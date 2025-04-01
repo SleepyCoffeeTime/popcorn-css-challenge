@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puerto Rico Airlines</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #FFDBAA;
+            --button-color: #805215;
+            --header-text: #553100;
+            --main-bg: #D4A76A;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: var(--header-bg);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            color: var(--header-text);
+            font-weight: bold;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .nav-buttons {
+            display: flex;
+        }
+        
+        .nav-button {
+            background-color: var(--button-color);
+            color: white;
+            padding: 15px 30px;
+            margin-left: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+            font-weight: bold;
+        }
+        
+        .main-content {
+            background-color: var(--main-bg);
+            padding: 30px;
+            min-height: 70vh;
+        }
+        
+        .card {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .card p {
+            margin-bottom: 20px;
+        }
+        
+        .action-button {
+            background-color: var(--button-color);
+            color: white;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            border: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        .about-section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .about-section h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PUERTO RICO AIRLINES</h1>
+        <div class="nav-buttons">
+            <a href="#" class="nav-button">HOME</a>
+            <a href="#" class="nav-button">FLIGHTS</a>
+            <a href="#" class="nav-button">SUPPORT</a>
+            <a href="#" class="nav-button">LOGIN</a>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <h2>Flights</h2>
+                        <p>Come check out or sweet flights! Direct flights available daily!</p>
+                        <a href="#" class="action-button">Lets go</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <h2>Group Trips</h2>
+                        <p>We offer great group rates! For families with 4 members to huge gatherings with 50+!</p>
+                        <a href="#" class="action-button">Group Rates</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <h2>Discount Flights</h2>
+                        <p>Discount flights available for individuals! Single chair filler tickets for low rates!</p>
+                        <a href="#" class="action-button">Jump in</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-section">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="action-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
